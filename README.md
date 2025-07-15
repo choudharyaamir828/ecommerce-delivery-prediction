@@ -1,32 +1,52 @@
-# 🛍️ E-commerce Delivery Prediction
+# 🛍️ E-commerce Delivery Prediction & Sales Insights
 
-This project analyzes 650,000 rows of online store data to uncover customer behavior and predict delivery status using the CatBoost algorithm.
-
-## 📊 Key Business Insights
-
-- **Gender Trends:** Women account for ~69% of purchases.
-- **Top States:** Maharashtra, Karnataka, and Uttar Pradesh dominate sales.
-- **Age Group:** Adults aged 30–49 contribute ~50% of revenue.
-- **Channels:** Amazon, Flipkart, and Myntra drive ~80% of traffic.
-
-### 🎯 Recommendation
-Focus marketing efforts on women aged 30–49 in the top three states via Amazon, Flipkart, and Myntra.
+This project combines **business intelligence** and **machine learning** to analyze customer behavior and predict delivery outcomes for an online store with over **650,000 transactions**. It provides actionable recommendations to improve sales and demonstrates the use of **CatBoost**, a powerful algorithm for categorical data.
 
 ---
 
-## 🤖 Machine Learning Model
+## 📊 Business Insights from Data Analysis
 
-### ✅ Goal
-Predict whether an order will be delivered or not.
+Using Excel and Python, the following key patterns were identified:
 
-### 🧠 Algorithm
-CatBoost — chosen for its efficiency with categorical features.
+- **👩 Gender Trends:**  
+  Women are significantly more likely to purchase than men, contributing approximately **69%** of total orders.
 
-### 📈 Accuracy
-Achieved **90% accuracy** on validation data.
+- **📍 Top Performing States:**  
+  The highest sales volume comes from **Maharashtra**, **Karnataka**, and **Uttar Pradesh**.
+
+- **🎯 Age Group Contribution:**  
+  Adults aged **30–49 years** account for nearly **50%** of all purchases.
+
+- **🛒 Dominant Sales Channels:**  
+  **Amazon**, **Flipkart**, and **Myntra** together drive around **80%** of total sales.
+
+### 📈 Strategic Recommendation
+
+To boost sales, target **women aged 30–49** in the top three states with **ads, offers, and coupons** on **Amazon, Flipkart, and Myntra**.
+
+---
+
+## 🤖 Machine Learning: Delivery Status Prediction
+
+### 🎯 Objective
+
+Predict whether a product will be **delivered** or **not delivered** based on order details.
+
+### 🧠 Algorithm Used
+
+**CatBoost Classifier** — chosen for its superior handling of categorical features and high performance.
+
+### 📊 Model Performance
+
+- **Accuracy:** ~90% on validation data
+- **Robustness:** Handles categorical variables without extensive preprocessing
 
 ### 📥 Features Used
-`['Gender', 'Age', 'Channel', 'SKU', 'Category', 'Size', 'Qty', 'Amount', 'ship-city', 'ship-state', 'B2B', 'order_day', 'order_month', 'order_weekday']`
+
+```python
+['Gender', 'Age', 'Channel', 'SKU', 'Category', 'Size', 'Qty', 'Amount',
+ 'ship-city', 'ship-state', 'B2B', 'order_day', 'order_month', 'order_weekday']
+
 
 ---
 
