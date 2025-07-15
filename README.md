@@ -56,3 +56,5 @@ Predict whether a product will be **delivered** or **not delivered** based on or
 ```bash
 pip install -r requirements.txt
 
+<img width="1855" height="725" alt="final" src="https://github.com/user-attachments/assets/b5ba41a4-fbb6-420b-b1c3-e2c865d93bed" />
+
